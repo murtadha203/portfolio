@@ -1,0 +1,726 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio for Murtadha Najem, Data Analyst and AI Engineer based in Baghdad, Iraq." name="description"/>
+<title>Murtadha Najem | Data Analyst &amp; AI Engineer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/images/icon.jpg" rel="icon" type="image/jpeg"/>
+<link href="assets/images/icon.jpg" rel="apple-touch-icon"/>
+<script>
+  (() => {
+    let savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem("portfolio-theme");
+    } catch {
+      savedTheme = null;
+    }
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+    let savedLanguage = null;
+    try {
+      savedLanguage = localStorage.getItem("portfolio-language");
+    } catch {
+      savedLanguage = null;
+    }
+    const initialLanguage = savedLanguage === "ar" ? "ar" : "en";
+    document.documentElement.lang = initialLanguage;
+    document.documentElement.dir = initialLanguage === "ar" ? "rtl" : "ltr";
+    document.documentElement.dataset.language = initialLanguage;
+  })();
+</script>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<nav aria-label="Primary navigation" class="nav container">
+<a aria-label="Go to top" class="nav-logo" href="#hero">Murtadha Najem</a>
+<button aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-menu" id="nav-menu">
+<a href="#about">About</a>
+<a href="#featured-projects">Featured</a>
+<a href="#practice">Practice</a>
+<a href="#edge-ai">Edge AI</a>
+<a href="#tools">Tools</a>
+<a href="#community">Community</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<div aria-label="Switch language" class="language-toggle" role="group">
+<button aria-pressed="true" class="language-option is-active" data-language-option="en" type="button">EN</button>
+<span aria-hidden="true">|</span>
+<button aria-pressed="false" class="language-option" data-language-option="ar" type="button">AR</button>
+</div>
+<button aria-label="Toggle dark mode" class="theme-toggle" type="button">
+<span aria-hidden="true" class="theme-toggle-icon">☾</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero -->
+<section class="hero section" id="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Data Analyst &amp; AI Engineer</p>
+<h1>Murtadha Najem</h1>
+<p class="hero-subtitle">Data Analyst &amp; AI Engineer</p>
+<p class="hero-description">I build end-to-end data pipelines, machine learning systems, and analytical reports that turn raw data into structured insights, with a focus on real-world problems in Iraq and Arabic-language data.</p>
+<div class="button-row">
+<a class="button button-primary" href="#featured-projects">View Projects</a>
+<a class="button button-secondary" href="assets/docs/Murtadha_Najem_CV.pdf">Download CV</a>
+<a class="button button-secondary" href="https://linkedin.com/in/murtadha-najem-397293297" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="button button-secondary" href="https://github.com/murtadha203" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+<p class="status-line">Based in Baghdad, Iraq &middot; Open to Data Analyst, BI Analyst, Research Analyst, and AI/ML Engineer roles</p>
+</div>
+<div aria-label="Portfolio summary preview" class="hero-panel">
+<div class="panel-header">
+<span class="panel-dot"></span>
+<span class="panel-dot"></span>
+<span class="panel-dot"></span>
+</div>
+<div class="metric-card metric-card-large">
+<span class="metric-label">Portfolio Focus</span>
+<strong>Data &middot; AI &middot; Analytics</strong>
+</div>
+<div aria-hidden="true" class="mini-chart">
+<span style="height: 42%"></span>
+<span style="height: 68%"></span>
+<span style="height: 55%"></span>
+<span style="height: 82%"></span>
+<span style="height: 74%"></span>
+</div>
+<div class="metric-row">
+<div class="metric-card">
+<span class="metric-label">Projects</span>
+<strong>Featured</strong>
+</div>
+<div class="metric-card">
+<span class="metric-label">Tools</span>
+<strong>Modern Stack</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About -->
+<section class="section" id="about">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">About</p>
+<h2>Clear thinking across data, models, and business problems.</h2>
+</div>
+<div class="about-grid">
+<p class="section-text">Results-driven Data Analyst &amp; AI Engineer with a background in Information and Communication Engineering from Al-Nahrain University. I focus on building practical data and AI systems, from data collection and cleaning to machine learning, structured extraction, and insight generation.</p>
+<div class="highlights-grid">
+<article class="highlight-card">
+<strong>Analytics</strong>
+<span>Insight-ready reporting and measurement.</span>
+</article>
+<article class="highlight-card">
+<strong>AI Systems</strong>
+<span>Practical automation and model workflows.</span>
+</article>
+<article class="highlight-card">
+<strong>Communication</strong>
+<span>Clear recommendations for stakeholders.</span>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="section section-muted" id="featured-projects">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Featured Projects</p>
+<h2>Selected projects that best represent my work in data pipelines, AI systems, audio AI, and communication engineering.</h2>
+</div>
+<div class="featured-grid">
+<article class="project-card project-card-featured project-card-primary">
+<div>
+<p class="card-meta">End-to-End Data Pipeline &middot; Analytical Report</p>
+<h3>Iraqi Job Market Analysis Pipeline</h3>
+<p class="project-subtitle">End-to-end data pipeline and analytical report on Iraq's private-sector job market.</p>
+<p>End-to-end Iraqi job market data pipeline that collected, filtered, classified, extracted, and analyzed more than 100,000 public job posts to produce a structured dataset and Arabic analytical report.</p>
+</div>
+<div class="stats-grid"><span><strong>101,961</strong> job posts</span><span><strong>17</strong> months</span><span><strong>30+</strong> Telegram channels</span><span><strong>10+</strong> platforms</span></div>
+<ul class="project-highlights">
+<li>Collected job posts from Telegram channels and hiring websites.</li>
+<li>Used REST APIs, Scrapy, Selenium/Playwright, and Telethon for scraping.</li>
+<li>Removed duplicates, short posts, and irrelevant messages.</li>
+<li>Used a multi-stage AI classification pipeline to identify real job posts.</li>
+<li>Routed posts into professional, service/clerical, and manual/basic job tiers.</li>
+<li>Extracted job title, company, location, salary, experience, education, skills, contract type, and gender preference.</li>
+<li>Cleaned and normalized job titles, salaries, locations, sectors, and skills.</li>
+<li>Produced an Arabic report for job seekers, employers, researchers, and decision makers.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>Pandas</span><span>Telethon</span><span>Scrapy/Playwright</span><span>OpenAI API</span><span>Arabic NLP</span></div>
+<div class="card-actions">
+<a aria-label="View Iraqi Job Market Analysis Pipeline repository" href="https://github.com/murtadha203/iraq-etl-pipeline" rel="noopener noreferrer" target="_blank">Pipeline Repo</a>
+<a aria-label="View Iraqi Job Market Analysis report" href="assets/docs/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D9%8A%D8%A9%20%D9%81%D9%8A%20%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A.pdf">View Report</a>
+<a aria-label="View Iraqi Job Market Analysis Pipeline notebook" href="https://www.kaggle.com/code/murtadhanajim/iraqi-market-analysis&copy;scriptVersionId=329246918" rel="noopener noreferrer" target="_blank">View Analysis Notebook</a>
+</div>
+</article>
+<article class="project-card project-card-featured project-card-secondary">
+<div>
+<p class="card-meta">Bachelor's Final Year Project &middot; Al-Nahrain University</p>
+<h3>Hierarchical LLM 5G/6G Control</h3>
+<p class="project-subtitle">Multi-agent AI system for handover and MEC optimization in 5G/6G networks.</p>
+<p>Graduation project combining deterministic telecom control agents with a guarded LLM strategy layer for handover and MEC optimization in simulated 5G/6G networks.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>73%</strong> URLLC drop reduction</span><span><strong>57%</strong> mMTC energy reduction</span><span><strong>70%</strong> fewer ping-pong handovers</span></div>
+<ul class="project-highlights">
+<li>Designed a hierarchical control architecture with tower-level agents, supervisor conflict resolution, and a strategic LLM optimizer.</li>
+<li>Implemented a deterministic safety shield to prevent unsafe LLM outputs.</li>
+<li>Used eight pre-validated policy bundles for controlled network optimization.</li>
+<li>Compared B0 baseline, B1 intent-aware, B2-noLLM deterministic, and B2 guarded LLM modes.</li>
+<li>Evaluated URLLC latency/drop, eMBB completion, mMTC energy, goodput, and unnecessary handovers.</li>
+<li>Tested 600-second simulations across multiple random seeds and compared GPT-4o-mini, GPT-4.1, and TeleLLM.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>LangGraph</span><span>OpenAI API</span><span>Multi-Agent Systems</span><span>Digital Twin</span><span>MEC/Handover</span></div>
+<div class="card-actions">
+<a aria-label="View Hierarchical LLM 5G/6G Control repository" href="https://github.com/murtadha203/hierarchical-llm-5g-control" rel="noopener noreferrer" target="_blank">View Repository</a>
+<a aria-label="Read Hierarchical LLM 5G/6G Control research paper" href="assets/docs/Murtadha_najem.pdf">Research Paper</a>
+</div>
+</article>
+<article class="project-card project-card-featured project-card-audio">
+<div>
+<p class="card-meta">Featured Audio AI Research &middot; Arabic Maqam Recognition</p>
+<h3>Arabic Maqam Classification</h3>
+<p class="project-subtitle">Deep learning system for recognizing Arabic maqamat in music and the Holy Quran.</p>
+<p>Audio AI project for recognizing Arabic maqamat across music and the Holy Quran, using signal processing, augmentation, and deep learning for a culturally specific Arabic audio problem.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>92.72%</strong> test accuracy</span><span><strong>8</strong> maqam classes</span><span><strong>Music + Holy Quran</strong></span></div>
+<div class="branch-grid">
+<div class="branch-panel">
+<p class="branch-label">Music Maqam</p>
+<h4>Music Maqam Classification</h4>
+<p>Built a deep learning pipeline for Arabic music maqam recognition using pitch-based features, augmentation, and a CNN-RNN / CNN-LSTM style model.</p>
+<ul class="project-highlights">
+<li>Classified 8 maqam classes: Ajam, Bayat, Hijaz, Kurd, Nahawand, Rast, Saba, and Seka.</li>
+<li>Used Librosa for audio loading and feature extraction with 60 fixed windows per sample.</li>
+<li>Applied augmentation and efficient HDF5-based feature storage.</li>
+</ul>
+</div>
+<div class="branch-panel">
+<p class="branch-label">Holy Quran</p>
+<h4>Holy Quran Maqam Classification</h4>
+<p>Extended the maqam-recognition workflow to Holy Quran audio as a related but distinct vocal audio classification task.</p>
+<ul class="project-highlights">
+<li>Focused on maqam recognition from Holy Quran audio.</li>
+<li>Applied preprocessing, feature extraction, and deep learning classification.</li>
+<li>Presented as an audio AI experiment, without making religious or interpretive claims.</li>
+</ul>
+</div>
+</div>
+<ul class="project-highlights">
+<li>Featured because it targets a culturally specific Arabic audio AI problem.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>Librosa</span><span>TensorFlow/Keras</span><span>CNN-LSTM</span><span>Audio Classification</span><span>Arabic Audio AI</span></div>
+<div class="card-actions">
+<a aria-label="View Arabic Maqam Classification music notebook" href="https://www.kaggle.com/code/murtadhanajim/arabic-maqam-classification-in-music" rel="noopener noreferrer" target="_blank">Music Notebook</a>
+<a aria-label="View Arabic Maqam Classification Holy Quran notebook" href="https://www.kaggle.com/code/murtadhanajim/quran-maqam-classification" rel="noopener noreferrer" target="_blank">Holy Quran Notebook</a>
+</div>
+</article>
+<article class="project-card project-card-featured">
+<div>
+<p class="card-meta">Telecommunications &middot; Deep Learning</p>
+<h3>Digital Modulation Classification</h3>
+<p class="project-subtitle">CNN-based classification of digital modulation signals for telecommunications.</p>
+<p>Telecommunications deep learning project that classifies digital modulation types from I/Q signal data using a family classifier and specialized CNN models.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>97.215%</strong> final accuracy</span><span><strong>99.763%</strong> family classifier</span></div>
+<ul class="project-highlights">
+<li>Used I/Q signal samples with shape 1024 x 2.</li>
+<li>Combined RadioML-style digital modulation data with FSK data.</li>
+<li>Built a general modulation-family classifier and specialized ASK, FSK, PSK, APSK, and QAM classifiers.</li>
+<li>Implemented a routing system that sends each signal to the correct specialized CNN model.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>TensorFlow/Keras</span><span>CNN</span><span>I/Q Signals</span><span>Telecommunications</span><span>Signal Processing</span></div>
+<div class="card-actions">
+<a aria-label="View Digital Modulation Classification notebook" href="https://www.kaggle.com/code/murtadhanajim/modulation-classification" rel="noopener noreferrer" target="_blank">View Notebook</a>
+<a aria-label="View Digital Modulation Classification report" href="assets/docs/DC%20Report.pdf">Report</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Learning & Practice Projects -->
+<section class="section accordion-section" id="practice">
+<div class="container">
+<button aria-expanded="false" class="accordion-header" type="button">
+<span class="accordion-copy">
+<span class="eyebrow">Learning &amp; Practice Projects</span>
+<span class="accordion-title">Earlier applied ML/DL notebooks built for practice, experimentation, and learning.</span>
+</span>
+<span class="accordion-meta">
+<span class="accordion-count">2 projects</span>
+<span aria-hidden="true" class="accordion-chevron"></span>
+</span>
+</button>
+<div class="accordion-panel" hidden="">
+<div class="accordion-panel-inner">
+<div class="project-grid">
+<article class="project-card compact-card project-card-wide">
+<div>
+<p class="card-meta">Computer Vision &middot; Medical Imaging</p>
+<h3>X-Ray Chest Classification</h3>
+<p class="project-subtitle">Deep learning system for chest X-ray pneumonia classification.</p>
+<p>This was my first serious project with CNNs and computer vision, built in 2024 while I was learning how deep learning models understand images. I used chest X-ray images to explore binary and multi-class classification with custom CNNs and transfer learning.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>5,216</strong> images</span><span><strong>3</strong> classes</span></div>
+<ul class="project-highlights">
+<li>Tested grayscale and RGB image pipelines with custom CNN models.</li>
+<li>Experimented with MobileNet, ResNet152V2, and DenseNet121 transfer learning models.</li>
+<li>Used train/validation/test evaluation with confusion matrices and classification reports.</li>
+<li>Compared approaches for separating bacterial and viral pneumonia classes.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>TensorFlow/Keras</span><span>CNN</span><span>Computer Vision</span><span>Medical Imaging</span></div>
+<div class="card-actions">
+<a aria-label="View X-Ray Chest Classification notebook" href="https://www.kaggle.com/code/murtadhanajim/x-ray-chest-different-models-with-86" rel="noopener noreferrer" target="_blank">View Notebook</a>
+</div>
+</article>
+<article class="project-card compact-card project-card-wide">
+<div>
+<p class="card-meta">Audio ML &middot; Feature Engineering</p>
+<h3>Speech-Based Gender Prediction</h3>
+<p class="project-subtitle">Audio feature engineering and machine learning for voice-based gender classification.</p>
+<p>After image-based deep learning, I wanted to understand how models learn from audio. I extracted MFCC, pitch, spectral, and energy features, then compared machine learning approaches for voice-based gender classification.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>92.81%</strong> final accuracy</span></div>
+<ul class="project-highlights">
+<li>Extracted spectral, temporal, pitch, MFCC, statistical, and energy-based features with Librosa.</li>
+<li>Applied preprocessing and MinMax scaling.</li>
+<li>Compared SVC, ExtraTrees, Random Forest, Bagging, KNN, Gradient Boosting, Logistic Regression, Naive Bayes, LDA, and QDA.</li>
+<li>Used Bayesian search for hyperparameter tuning and saved the trained model for reuse.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>Librosa</span><span>Scikit-learn</span><span>Audio Features</span><span>Machine Learning</span></div>
+<div class="card-actions">
+<a aria-label="View Speech-Based Gender Prediction notebook" href="https://www.kaggle.com/code/murtadhanajim/speech-based-gender-prediction" rel="noopener noreferrer" target="_blank">View Notebook</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Edge AI & IoT Projects -->
+<section class="section accordion-section" id="edge-ai">
+<div class="container">
+<button aria-expanded="false" class="accordion-header" type="button">
+<span class="accordion-copy">
+<span class="eyebrow">Edge AI &amp; IoT Projects</span>
+<span class="accordion-title">Hardware-to-backend systems combining edge devices, computer vision, and automation.</span>
+</span>
+<span class="accordion-meta">
+<span class="accordion-count">1 project</span>
+<span aria-hidden="true" class="accordion-chevron"></span>
+</span>
+</button>
+<div class="accordion-panel" hidden="">
+<div class="accordion-panel-inner">
+<div class="subsection-heading">
+<p class="eyebrow">Applied Edge AI System</p>
+<h3>Full pipeline from hardware capture to local backend processing and storage.</h3>
+</div>
+<div class="edge-ai-grid">
+<article class="project-card compact-card edge-ai-card">
+<div>
+<p class="card-meta">Edge AI &middot; IoT Vision System</p>
+<h3>Smart Walkway Camera System</h3>
+<p class="project-subtitle">ESP32-CAM edge-to-server computer vision pipeline for smart walkway monitoring.</p>
+<p>This project helped me learn how to combine ESP32 hardware with AI in an edge-computing workflow, sending relevant camera frames to a local Flask backend for vision processing and storage.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>ESP32-CAM</strong></span><span><strong>TinyML</strong></span><span><strong>Flask</strong> backend</span><span><strong>OpenCV<br>ONNX</strong></span></div>
+<div class="branch-grid">
+<div class="branch-panel">
+<p class="branch-label">Edge Device</p>
+<ul class="project-highlights">
+<li>Built an ESP32-CAM based edge vision pipeline.</li>
+<li>Used TinyML / Edge Impulse for on-device person detection.</li>
+<li>Captured VGA images and downscaled frames for lightweight edge inference.</li>
+<li>Uploaded images only when a person was detected, including bounding boxes through custom HTTP headers.</li>
+</ul>
+</div>
+<div class="branch-panel">
+<p class="branch-label">Backend &amp; Storage</p>
+<ul class="project-highlights">
+<li>Used a Python Flask server for receiving images and running local processing.</li>
+<li>Applied OpenCV with ONNX models for face detection and recognition.</li>
+<li>Generated processed images with bounding boxes and recognition labels.</li>
+<li>Included optional PostgreSQL-backed image logging and multiple ESP32 operating modes.</li>
+</ul>
+</div>
+</div>
+<div class="tag-row tag-row-dense"><span>ESP32-CAM</span><span>TinyML</span><span>Flask</span><span>OpenCV/ONNX</span><span>IoT</span><span>Edge AI</span></div>
+<div class="card-actions">
+<a aria-label="View Smart Walkway Camera System repository" href="https://github.com/murtadha203/esp32-smart-walkway" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Workflow Automation Tools -->
+<section class="section accordion-section section-muted" id="tools">
+<div class="container">
+<button aria-expanded="false" class="accordion-header" type="button">
+<span class="accordion-copy">
+<span class="eyebrow">Workflow Automation Tools</span>
+<span class="accordion-title">Applied tools built to automate specific tasks and make repeatable workflows easier.</span>
+</span>
+<span class="accordion-meta">
+<span class="accordion-count">2 tools</span>
+<span aria-hidden="true" class="accordion-chevron"></span>
+</span>
+</button>
+<div class="accordion-panel" hidden="">
+<div class="accordion-panel-inner">
+<div class="product-project-grid">
+<article class="project-card compact-card product-project-card">
+<div>
+<p class="card-meta">Automation &middot; Local-First Tooling</p>
+<h3>Video Compression &amp; Phone Sync Suite</h3>
+<p class="project-subtitle">Local-first video compression and phone sync toolkit with Android automation and Telegram bot support.</p>
+<p>This project started from a repeated personal problem: phone storage kept filling up because videos take too much space. I built a local-first workflow to pull, compress, report, and sync videos back to the phone.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>Local-first</strong></span><span><strong>FFmpeg</strong> HEVC</span><span><strong>Android</strong> ADB</span><span><strong>Telegram</strong> Bot</span></div>
+<div class="branch-grid">
+<div class="branch-panel">
+<p class="branch-label">Android CLI Pipeline</p>
+<ul class="project-highlights">
+<li>Pulls videos from an Android camera folder to a local PC using ADB.</li>
+<li>Compresses videos using FFmpeg and HEVC/H.265.</li>
+<li>Pushes optimized videos back to the phone.</li>
+<li>Monitors free disk space and pauses before the drive fills up.</li>
+</ul>
+</div>
+<div class="branch-panel">
+<p class="branch-label">Telegram Bot Workflow</p>
+<ul class="project-highlights">
+<li>Supports Android, iPhone/iOS, desktop, and web through Telegram upload.</li>
+<li>Uses a 10-second sample encode to estimate runtime and final file size.</li>
+<li>Provides Quick, Standard, and Maximum compression modes.</li>
+<li>Processes video jobs sequentially with a non-blocking internal queue.</li>
+</ul>
+</div>
+</div>
+<ul class="project-highlights">
+<li>Dynamically selects compression settings based on source bitrate.</li>
+<li>Generates compression reports and space-saving statistics.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>FFmpeg</span><span>ADB</span><span>Telegram Bot</span><span>Automation</span></div>
+<div class="card-actions">
+<a aria-label="View Video Compression and Phone Sync Suite repository" href="https://github.com/murtadha203/android-video-compress-TG-bot" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+<article class="project-card compact-card product-project-card">
+<div>
+<p class="card-meta">Product Engineering &middot; Telegram Bot</p>
+<h3>Telegram Crochet Pattern Bot</h3>
+<p class="project-subtitle">Image-to-crochet-pattern Telegram bot with Arabic support and interactive step-by-step guidance.</p>
+<p>I built this bot after noticing how difficult it can be to manually convert images into crochet patterns. It turns an uploaded image into a crochet-style grid, maps colors, and guides users row by row in Telegram.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>Simple UI</strong></span><span><strong>Telegram Use</strong></span><span><strong>Precise Color Selection</strong></span></div>
+<div class="branch-grid">
+<div class="branch-panel">
+<p class="branch-label">Workflow</p>
+<ul class="project-highlights">
+<li>Converts uploaded images into crochet pattern grids.</li>
+<li>Analyzes image complexity and recommends an optimal pattern size.</li>
+<li>Detects dominant colors and maps them to a yarn color palette.</li>
+<li>Generates row-by-row crochet instructions with Arabic interface support.</li>
+</ul>
+</div>
+<div class="branch-panel">
+<p class="branch-label">Architecture</p>
+<ul class="project-highlights">
+<li>Separates reusable image-processing modules from Telegram bot handlers.</li>
+<li>Uses SQLite for user and session persistence.</li>
+<li>Supports inline-button navigation and localized stitch color edits.</li>
+<li>Keeps core logic reusable for a future web app, CLI tool, or messaging platform.</li>
+</ul>
+</div>
+</div>
+<div class="tag-row tag-row-dense"><span>Python</span><span>Telegram Bot</span><span>Pillow</span><span>SQLite</span><span>Image Processing</span></div>
+<div class="card-actions">
+<a aria-label="View Telegram Crochet Pattern Bot repository" href="https://github.com/murtadha203/crochet_bot" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Side Projects & Personal Tools -->
+<section class="section accordion-section section-muted" id="side-projects">
+<div class="container">
+<button aria-expanded="false" class="accordion-header" type="button">
+<span class="accordion-copy">
+<span class="eyebrow">Side Projects &amp; Personal Tools</span>
+<span class="accordion-title">Small side projects and personal tools built from curiosity, study needs, or everyday use cases.</span>
+</span>
+<span class="accordion-meta">
+<span class="accordion-count">3 projects</span>
+<span aria-hidden="true" class="accordion-chevron"></span>
+</span>
+</button>
+<div class="accordion-panel" hidden="">
+<div class="accordion-panel-inner">
+<div class="subsection-heading">
+<p class="eyebrow">Experimental &amp; Educational Tools</p>
+<h3>Small exploratory tools built around custom logic, study support, and practical interfaces.</h3>
+</div>
+<div class="experimental-tool-grid">
+<article class="project-card compact-card experimental-tool-card">
+<div>
+<p class="card-meta">Mathematical Programming &middot; Python Tool</p>
+<h3>InfiniteBaseCalc</h3>
+<p class="project-subtitle">Python base-conversion and calculator tool supporting unusual numeric bases.</p>
+<p>This older side project started from a math question about number systems beyond everyday bases. I built a converter and calculator to explore negative bases, fractional bases, and custom base logic.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>Negative Bases</strong></span><span><strong>Fractional Bases</strong></span><span><strong>Calculation Accuracy</strong></span></div>
+<ul class="project-highlights">
+<li>Converts numbers across many base systems, excluding base 0 and base 1.</li>
+<li>Supports fractional and negative numbers with manually implemented Python logic.</li>
+<li>Includes an expression calculator for calculations in a selected base.</li>
+<li>Includes a testing script for measuring error rates across base and number scenarios.</li>
+</ul>
+<p class="project-note">Standard positive-base conversions reached 0% error in tested cases; higher error mainly appears with small fractional bases and large numbers.</p>
+<div class="tag-row tag-row-dense"><span>Python</span><span>Tkinter</span><span>Base Conversion</span><span>Number Systems</span><span>Error Analysis</span></div>
+<div class="card-actions">
+<a aria-label="View InfiniteBaseCalc repository" href="https://github.com/murtadha203/InfiniteBaseCalc" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+<article class="project-card compact-card experimental-tool-card">
+<div>
+<p class="card-meta">Educational Tool &middot; Web Calculator</p>
+<h3>Numerical Methods Calculator Suite</h3>
+<p class="project-subtitle">Web-based study tools for solving numerical analysis methods.</p>
+<p>I built this web tool while studying numerical methods because our coursework required many techniques in one place. Programming each method helped me understand the algorithms more deeply.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>Simple Web Interface</strong></span><span><strong>Full Step Explanation</strong></span></div>
+<ul class="project-highlights">
+<li>Built with HTML, CSS, and JavaScript to support classmates during coursework.</li>
+<li>Helps students verify solutions and understand step-by-step numerical procedures.</li>
+<li>Organized into separate pages and scripts for each method.</li>
+<li>Includes Bisection, Newton, Secant, False Position, Gaussian, Gauss-Jordan, Gauss-Seidel, Jacobi, Inverse Matrix, and Taylor methods.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Numerical Methods</span><span>Educational Tool</span></div>
+<div class="card-actions">
+<a aria-label="View Numerical Methods Calculator Suite repository" href="https://github.com/murtadha203/num_calc" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+</div>
+<div class="subsection-heading">
+<p class="eyebrow">Personal Automation Tools</p>
+<h3>Small utilities built to simplify repeatable personal workflows.</h3>
+</div>
+<div class="personal-tool-grid">
+<article class="project-card compact-card personal-tool-card">
+<div>
+<p class="card-meta">Personal Automation &middot; Media Utility</p>
+<h3>YouTube to MP3 Tool</h3>
+<p class="project-subtitle">Windows and Telegram-based utility for converting YouTube videos to MP3.</p>
+<p>I built this tool because I needed a simpler way to download YouTube audio as MP3 without ads, limits, or unreliable websites. It combines Windows automation, yt-dlp, FFmpeg, and Telegram bot access.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>MP3</strong> utility</span><span><strong>Windows</strong> automation</span></div>
+<ul class="project-highlights">
+<li>Supports direct MP3 download on Windows through a simple batch file.</li>
+<li>Supports remote download through a Telegram bot.</li>
+<li>Accepts standard YouTube, youtu.be, and YouTube Shorts links.</li>
+<li>Uses yt-dlp for downloading media streams and FFmpeg for MP3 conversion.</li>
+<li>Uses browser cookies for authenticated YouTube access and temporary files for bot mode.</li>
+</ul>
+<div class="tag-row tag-row-dense"><span>Python</span><span>yt-dlp</span><span>FFmpeg</span><span>Telegram Bot</span><span>Windows Automation</span></div>
+<div class="card-actions">
+<a aria-label="View YouTube to MP3 Tool repository" href="https://github.com/murtadha203/YouTube-to-MP3" rel="noopener noreferrer" target="_blank">View Repository</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community & Volunteering -->
+<section class="section accordion-section" id="community">
+<div class="container">
+<button aria-expanded="false" class="accordion-header" type="button">
+<span class="accordion-copy">
+<span class="eyebrow">Community &amp; Volunteering</span>
+<span class="accordion-title">Educational documentation and knowledge-sharing work created to support students and future cohorts.</span>
+</span>
+<span class="accordion-meta">
+<span class="accordion-count">1 initiative</span>
+<span aria-hidden="true" class="accordion-chevron"></span>
+</span>
+</button>
+<div class="accordion-panel" hidden="">
+<div class="accordion-panel-inner">
+<div class="community-grid">
+<article class="community-card">
+<div>
+<p class="card-meta">Academic Documentation &middot; Knowledge Sharing</p>
+<h3>ICE 2022-2026 Study Archive</h3>
+<p class="project-subtitle">Structured academic archive and student-friendly explanations for Information &amp; Communication Engineering.</p>
+<p>A volunteer educational initiative built to organize, document, and explain study materials for Information &amp; Communication Engineering students across four academic years.</p>
+</div>
+<div class="stats-grid stats-grid-compact"><span><strong>4</strong> academic years</span><span><strong>8</strong> semesters</span><span><strong>Telegram</strong> archive</span></div>
+<ul class="project-highlights">
+<li>Created structured Telegram channels and course-level indexes.</li>
+<li>Documented lectures, summaries, explanations, questions, solutions, and useful references.</li>
+<li>Wrote and organized explanations in a clear, student-friendly style.</li>
+<li>Helped students quickly find materials by year, semester, and subject.</li>
+<li>Shared the archive publicly to support future cohorts and students studying similar engineering topics.</li>
+<li>Designed as a collaborative educational resource built around clarity, accessibility, and long-term usefulness.</li>
+</ul>
+<p class="project-note">Coverage includes Year 1 through Year 4, Course 1 and Course 2, across programming, mathematics, electronics, communications, networking, AI, data mining, multimedia, and related engineering subjects.</p>
+<div class="tag-row tag-row-dense"><span>Telegram</span><span>Academic Documentation</span><span>Knowledge Sharing</span><span>Study Archive</span></div>
+<div class="card-actions">
+<a aria-label="Open ICE 2022-2026 Study Archive on Telegram" href="https://t.me/ice_2022_2026" rel="noopener noreferrer" target="_blank">Open Archive</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section class="section section-muted" id="skills">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Skills</p>
+<h2>Grouped capabilities.</h2>
+</div>
+<div class="skills-grid">
+<article class="skill-card">
+<h3>Data Analysis</h3>
+<div class="tag-row">
+<span>Python</span>
+<span>SQL</span>
+<span>Statistics</span>
+<span>EDA</span>
+</div>
+</article>
+<article class="skill-card">
+<h3>Machine Learning</h3>
+<div class="tag-row">
+<span>Modeling</span>
+<span>Evaluation</span>
+<span>Feature Engineering</span>
+<span>MLOps</span>
+</div>
+</article>
+<article class="skill-card">
+<h3>AI Engineering</h3>
+<div class="tag-row">
+<span>LLMs</span>
+<span>Prompting</span>
+<span>RAG</span>
+<span>APIs</span>
+</div>
+</article>
+<article class="skill-card">
+<h3>Visualization</h3>
+<div class="tag-row">
+<span>Dashboards</span>
+<span>Power BI</span>
+<span>Tableau</span>
+<span>Storytelling</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Credentials -->
+<section class="section" id="credentials">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Credentials</p>
+<h2>Academic background and certifications supporting my work in data analysis, machine learning, and applied AI.</h2>
+</div>
+<div class="credentials-grid">
+<article class="credential-card">
+<p class="card-meta">Education</p>
+<h3>B.Sc. Information and Communication Engineering</h3>
+<p>Al-Nahrain University &mdash; College of Information Engineering</p>
+<p>Graduated June 2026</p>
+<p>Ranked 1st in class</p>
+</article>
+<article class="credential-card">
+<p class="card-meta">Certifications</p>
+<h3>Professional Certifications</h3>
+<div class="certification-list">
+<div class="certification-item">
+<h4>IBM Data Science Professional Certificate</h4>
+<p>Python, SQL, machine learning, and data visualization across 12 courses.</p>
+<a href="https://coursera.org/verify/professional-cert/6LTV2VZVEYDY" rel="noopener noreferrer" target="_blank">View Credential</a>
+</div>
+<div class="certification-item">
+<h4>IBM Data Analyst Professional Certificate</h4>
+<p>Data analysis, Excel, SQL, Jupyter, and Cognos Analytics across 11 courses.</p>
+<a href="https://coursera.org/verify/professional-cert/IZYZG9OCEM69" rel="noopener noreferrer" target="_blank">View Credential</a>
+</div>
+<div class="certification-item">
+<h4>Machine Learning Specialization by Stanford Online</h4>
+<p>Supervised learning, unsupervised learning, neural networks, and reinforcement learning across 3 courses.</p>
+<a href="https://www.coursera.org/account/accomplishments/specialization/6U6D7D2I973R" rel="noopener noreferrer" target="_blank">View Credential</a>
+</div>
+<div class="certification-item">
+<h4>IBM Machine Learning Professional Certificate</h4>
+<p>Machine learning, deep learning, time series, and reinforcement learning across 6 courses.</p>
+<a href="https://www.coursera.org/account/accomplishments/specialization/279BE5Y65KKR" rel="noopener noreferrer" target="_blank">View Credential</a>
+</div>
+</div>
+</article>
+<article class="credential-card">
+<p class="card-meta">CV</p>
+<h3>Full CV</h3>
+<p>For full education, experience, certifications, and project history, download the complete CV.</p>
+<div class="card-actions">
+<a aria-label="Download Murtadha Najem full CV" href="assets/docs/Murtadha_Najem_CV.pdf">Download CV</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="section contact-section" id="contact">
+<div class="container contact-container">
+<p class="eyebrow">Contact</p>
+<h2>Let's connect about data, AI, and useful work.</h2>
+<p>Open to Data Analyst, BI Analyst, Research Analyst, and AI/ML Engineer opportunities.</p>
+<div aria-label="Contact details" class="contact-items">
+<a href="mailto:mu0rttadha@gmail.com">mu0rttadha@gmail.com</a>
+<a href="https://wa.me/9647734591075" rel="noopener noreferrer" target="_blank">+964 773 459 1075</a>
+<span>Baghdad, Iraq</span>
+</div>
+<div class="contact-links">
+<a class="button button-primary" href="mailto:mu0rttadha@gmail.com">Email</a>
+<a class="button button-secondary" href="https://linkedin.com/in/murtadha-najem-397293297" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="button button-secondary" href="https://github.com/murtadha203" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="button button-secondary" href="https://www.kaggle.com/murtadhanajim" rel="noopener noreferrer" target="_blank">Kaggle</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>&copy; <span id="year"></span> Murtadha Najem. All rights reserved.</p>
+<a href="#hero">Back to top</a>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
