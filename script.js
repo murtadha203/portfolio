@@ -191,7 +191,7 @@ const translations = {
   "Supports inline-button navigation and localized stitch color edits.": "دعم التنقل بالأزرار المدمجة وتعديل ألوان غرز محددة محلياً.",
   "Keeps core logic reusable for a future web app, CLI tool, or messaging platform.": "إبقاء المنطق الأساسي قابلاً لإعادة الاستخدام في تطبيق ويب أو أداة CLI أو منصة مراسلة لاحقاً.",
   "Side Projects & Personal Tools": "مشاريع جانبية وأدوات شخصية",
-  "Small side projects and personal tools built from curiosity, study needs, or everyday use cases.": "مشاريع جانبية وأدوات شخصية صغيرة بُنيت من الفضول أو احتياجات الدراسة أو الاستخدام اليومي.",
+  "Small exploratory and educational tools built from curiosity and study needs.": "أدوات استكشافية وتعليمية صغيرة بُنيت من الفضول واحتياجات الدراسة.",
   "Experimental & Educational Tools": "أدوات تجريبية وتعليمية",
   "Small exploratory tools built around custom logic, study support, and practical interfaces.": "أدوات استكشافية صغيرة مبنية حول منطق مخصص ودعم دراسي وواجهات عملية.",
   "Mathematical Programming · Python Tool": "برمجة رياضية · أداة Python",
@@ -487,16 +487,10 @@ const getPreferredTheme = () => {
     return savedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "light";
 };
 
 setTheme(getPreferredTheme(), false);
-
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
-  if (!getSavedTheme()) {
-    setTheme(event.matches ? "dark" : "light", false);
-  }
-});
 
 const setAccordionState = (section, shouldOpen) => {
   const button = section.querySelector(".accordion-header");

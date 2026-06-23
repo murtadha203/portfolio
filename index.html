@@ -19,8 +19,7 @@
     } catch {
       savedTheme = null;
     }
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+    document.documentElement.dataset.theme = savedTheme || "light";
     let savedLanguage = null;
     try {
       savedLanguage = localStorage.getItem("portfolio-language");
@@ -468,7 +467,7 @@
 <button aria-expanded="false" class="accordion-header" type="button">
 <span class="accordion-copy">
 <span class="eyebrow">Side Projects &amp; Personal Tools</span>
-<span class="accordion-title">Small side projects and personal tools built from curiosity, study needs, or everyday use cases.</span>
+<span class="accordion-title">Small exploratory and educational tools built from curiosity and study needs.</span>
 </span>
 <span class="accordion-meta">
 <span class="accordion-count">2 projects</span>
